@@ -197,6 +197,110 @@ nav {
   cursor: pointer;
 }
 
+/* AI Prompt section */
+
+/* ===========================
+   Tech Stack Section
+=========================== */
+
+.tech-stack {
+  margin-bottom: 50px;
+}
+
+.tech-content {
+  max-width: 750px;
+  width: 90%;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.tech-content h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #0d1b2a;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.tech-content p {
+  font-size: 18px;
+  color: #575757;
+  line-height: 1.7;
+}
+
+/* Grid */
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Card */
+
+.tech-card {
+  background-color: #0d1b2a;
+  padding: 30px 22px;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Icon */
+
+.tech-icon {
+  font-size: 42px;
+  color: #3b82f6;
+  margin-bottom: 18px;
+}
+
+/* Heading */
+
+.tech-card h3 {
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/* Description */
+
+.tech-card p {
+  color: #d1d5db;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media screen and (max-width: 992px) {
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tech-content h2 {
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tech-content h2 {
+    font-size: 28px;
+  }
+
+  .tech-content p {
+    font-size: 16px;
+  }
+}
+
 /* Footer section */
 
 footer {
