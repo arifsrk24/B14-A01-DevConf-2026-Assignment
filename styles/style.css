@@ -72,3 +72,48 @@ nav {
 .header-content p {
   margin-bottom: 150px;
 }
+
+/* Meet the speakers section */
+
+.speakers {
+  margin-bottom: 50px;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.speaker-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+.speaker-card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+.speaker-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.speaker-card h3 {
+  margin-top: 8px;
+  color: #0d1b2a;
+}
+.speaker-card .speaker-blue-font {
+  color: #1d4ed8;
+  font-weight: 600;
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+.speaker-card p {
+  font-size: 14px;
+  color: #575757;
+  line-height: 1.4;
+}
+
