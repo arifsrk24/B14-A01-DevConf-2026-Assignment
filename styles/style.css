@@ -117,3 +117,82 @@ nav {
   line-height: 1.4;
 }
 
+/* Secure Your Spot section */
+
+.pricing {
+  margin-bottom: 50px;
+}
+.pricing-header {
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.pricing-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.pricing-card {
+  background-color: white;
+  padding: 20px;
+  padding-top: 50px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  width: 370px;
+  min-height: 445px;
+  margin-top: 50px;
+  line-height: 1.5;
+}
+.pricing-card hr {
+  margin: 15px 0;
+  border: none;
+  border-top: 1px solid #d1d5db;
+}
+.card-features {
+  list-style-type: disc;
+  padding-left: 30px;
+}
+.card-features li {
+  margin-bottom: 10px;
+  color: #575757;
+  font-size: 14px;
+}
+.card-features li::marker {
+  color: #2563eb;
+  font-size: 20px;
+}
+.pro-card {
+  background-color: #0d1b2a;
+  color: white;
+}
+.pro-card .card-features li {
+  color: white;
+}
+.pro-card-title {
+  color: #93c5fd;
+}
+.card-button {
+  color: #2563eb;
+  background-color: white;
+  height: 45px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #2563eb;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.pro-button {
+  color: white;
+  background-color: #2563eb;
+  cursor: pointer;
+}
