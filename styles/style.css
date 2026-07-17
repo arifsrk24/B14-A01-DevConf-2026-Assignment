@@ -5,6 +5,7 @@
   font-family: "Roboto", sans-serif;
 }
 /* Navbar section  */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -14,7 +15,6 @@ nav {
   margin: 0 auto;
   padding: 18px 20px;
 }
-
 .nav-links {
   display: flex;
   gap: 20px;
@@ -25,11 +25,14 @@ nav {
   color: #575757;
   font-size: 16px;
 }
+.nav-links a:hover {
+  color: #1d4ed8;
+}
 .nav-button {
   color: white;
   background-color: #1d4ed8;
-  height: 40px;
-  width: 130px;
+  height: 50px;
+  width: 150px;
   border-radius: 10px;
   border: none;
   font-size: 15px;
@@ -72,6 +75,17 @@ nav {
 .header-content p {
   margin-bottom: 150px;
 }
+.hero-button {
+  color: white;
+  background-color: #1d4ed8;
+  height: 50px;
+  width: 250px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
 /* Meet the speakers section */
 
@@ -81,6 +95,9 @@ nav {
 .section-title {
   text-align: center;
   margin-bottom: 30px;
+  font-size: 50px;
+  color: #000102;
+  font-weight: 700;
 }
 .speaker-grid {
   display: grid;
@@ -96,6 +113,9 @@ nav {
   border-radius: 10px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
+.speaker-card-content {
+  line-height: 2;
+}
 .speaker-card img {
   width: 100%;
   height: auto;
@@ -108,13 +128,11 @@ nav {
 .speaker-card .speaker-blue-font {
   color: #1d4ed8;
   font-weight: 600;
-  font-size: 10px;
-  margin-bottom: 10px;
+  letter-spacing: 0.3px;
 }
 .speaker-card p {
   font-size: 14px;
   color: #575757;
-  line-height: 1.4;
 }
 
 /* Secure Your Spot section */
@@ -123,11 +141,21 @@ nav {
   margin-bottom: 50px;
 }
 .pricing-header {
+  max-width: 700px;
+  width: 90%;
+  margin: 0 auto;
   text-align: center;
-  margin-bottom: 30px;
   line-height: 1.5;
 }
-
+.pricing-header h2 {
+  font-size: 45px;
+  font-weight: 700;
+  color: #0d1b2a;
+}
+.pricing-header p {
+  font-size: 16px;
+  color: #575757;
+}
 .pricing-card-container {
   display: flex;
   justify-content: center;
@@ -138,7 +166,6 @@ nav {
   border: 1px solid black;
   border-radius: 10px;
 }
-
 .pricing-card {
   background-color: white;
   padding: 20px;
@@ -197,7 +224,7 @@ nav {
   cursor: pointer;
 }
 
-/* AI Prompt section */
+/* Test AI section  */
 
 /* ===========================
    Tech Stack Section
@@ -208,8 +235,8 @@ nav {
 }
 
 .tech-content {
-  max-width: 750px;
   width: 90%;
+  max-width: 750px;
   margin: 0 auto 40px;
   text-align: center;
 }
@@ -218,8 +245,8 @@ nav {
   font-size: 42px;
   font-weight: 700;
   color: #0d1b2a;
-  margin-bottom: 15px;
   line-height: 1.2;
+  margin-bottom: 15px;
 }
 
 .tech-content p {
@@ -228,49 +255,92 @@ nav {
   line-height: 1.7;
 }
 
-/* Grid */
+/* ===========================
+   Grid
+=========================== */
 
 .tech-grid {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  max-width: 1200px;
-  width: 90%;
-  margin: 0 auto;
 }
 
-/* Card */
+/* ===========================
+   Card
+=========================== */
 
 .tech-card {
   background-color: #0d1b2a;
-  padding: 30px 22px;
   border-radius: 10px;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  padding: 30px 22px;
   text-align: center;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
-
-/* Icon */
-
-.tech-icon {
-  font-size: 42px;
-  color: #3b82f6;
-  margin-bottom: 18px;
-}
-
-/* Heading */
 
 .tech-card h3 {
-  color: #ffffff;
+  color: white;
   font-size: 22px;
-  margin-bottom: 15px;
+  margin: 15px 0;
 }
-
-/* Description */
 
 .tech-card p {
   color: #d1d5db;
   font-size: 14px;
   line-height: 1.7;
+}
+
+/* ===========================
+   Icons
+=========================== */
+
+.tech-icon {
+  font-size: 46px;
+}
+
+/* Official Brand Colors */
+
+.html {
+  color: #e34f26;
+}
+
+.css {
+  color: #1572b6;
+}
+
+.javascript {
+  color: #f7df1e;
+}
+
+.react {
+  color: #61dafb;
+}
+
+.node {
+  color: #339933;
+}
+
+.mongodb {
+  color: #47a248;
+}
+
+.tailwind {
+  color: #06b6d4;
+}
+
+.github {
+  color: #ffffff;
+}
+
+/* ===========================
+   Hover Effect
+=========================== */
+
+.tech-card:hover {
+  transform: translateY(-6px);
+  transition: 0.3s;
 }
 
 /* ===========================
@@ -356,3 +426,5 @@ footer hr {
   color: #9ca3af;
   font-size: 15px;
 }
+
+/* The end of CSS */
